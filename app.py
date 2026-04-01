@@ -113,7 +113,7 @@ def ask_cortex_analyst(question: str) -> dict:
     }
 
     headers = {
-        "Authorization": f'Snowflake Token="{token}"',
+        "Authorization": f"Bearer {token}",
         "Content-Type":  "application/json",
         "Accept":        "application/json",
         "X-Snowflake-Authorization-Token-Type": "KEYPAIR_JWT",
